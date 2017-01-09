@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/TravelToDemo.iml" filepath="$PROJECT_DIR$/TravelToDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TravelToDemo-grailsPlugins.iml" filepath="$PROJECT_DIR$/TravelToDemo-grailsPlugins.iml" />
+    </modules>
+  </component>
+</project>

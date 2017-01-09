@@ -1,0 +1,32 @@
+package fontrip.account
+
+import groovy.transform.EqualsAndHashCode
+import groovy.transform.ToString
+
+@EqualsAndHashCode(includes='authority')
+@ToString(includes='authority', includeNames=true, includePackage=false)
+class Role implements Serializable {
+
+    //for i18N查詢使用
+    final static String NAMECODE_PREFIX = "role.name."
+
+	private static final long serialVersionUID = 1
+
+	String authority
+
+	Role(String authority) {
+		this.authority = authority
+	}
+
+    String getNameCode(){
+        return NAMECODE_PREFIX + this.authority
+    }
+
+	static constraints = {
+		authority blank: false, unique: true
+	}
+
+	static mapping = {
+		cache true
+	}
+}
