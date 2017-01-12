@@ -1,0 +1,182 @@
+{
+  "generalRoleList":[
+    {"authority":"ROLE_USER","desc":"用戶"},
+    {"authority":"ROLE_BACKEND_USER","desc":"後台用戶"}
+  ],
+
+  "adminRoleList":[
+    {"authority":"ROLE_ADMIN_API_CREATE","desc":"建立API授權"},
+    {"authority":"ROLE_ADMIN_API_EDIT","desc":"修改API授權"},
+    {"authority":"ROLE_ADMIN_API_DELETE","desc":"刪除/停用 API授權"},
+    {"authority":"ROLE_ADMIN_API_VIEW","desc":"檢視API授權"},
+
+    {"authority":"ROLE_ADMIN_SYS_CONFIG_EDIT","desc":"修改系統設定"},
+    {"authority":"ROLE_ADMIN_SYS_CONFIG_VIEW","desc":"顯示系統設定"},
+
+    {"authority":"ROLE_ADMIN_BANNER_CREATE","desc":"新增廣告模組"},
+    {"authority":"ROLE_ADMIN_BANNER_VIEW","desc":"檢視廣告模組"},
+    {"authority":"ROLE_ADMIN_BANNER_DELETE","desc":"刪除廣告模組"},
+    {"authority":"ROLE_ADMIN_BANNER_EDIT","desc":"修改廣告模組"},
+
+    {"authority":"ROLE_ADMIN_STORE_CREATE","desc":"建立店家"},
+    {"authority":"ROLE_ADMIN_STORE_EDIT","desc":"修改店家"},
+    {"authority":"ROLE_ADMIN_STORE_DELETE","desc":"刪除/停用 店家"},
+    {"authority":"ROLE_ADMIN_STORE_VIEW","desc":"檢視店家"},
+    {"authority":"ROLE_ADMIN_STORE_CONFIG","desc":"修改店家設定值"},
+
+    {"authority":"ROLE_ADMIN_SPOT_CREATE","desc":"建立景點"},
+    {"authority":"ROLE_ADMIN_SPOT_EDIT","desc":"修改景點"},
+    {"authority":"ROLE_ADMIN_SPOT_DISABLE","desc":"啟用/停用 景點"},
+    {"authority":"ROLE_ADMIN_SPOT_VIEW","desc":"檢視景點"},
+    {"authority":"ROLE_ADMIN_SPOT_CONFIG","desc":"修改景點設定值"},
+
+    {"authority":"ROLE_ADMIN_CHANNEL_CREATE","desc":"建立通路"},
+    {"authority":"ROLE_ADMIN_CHANNEL_EDIT","desc":"修改通路"},
+    {"authority":"ROLE_ADMIN_CHANNEL_DISABLE","desc":"啟用/停用 通路"},
+    {"authority":"ROLE_ADMIN_CHANNEL_VIEW","desc":"檢視通路"},
+    {"authority":"ROLE_ADMIN_CHANNEL_CONFIG","desc":"修改通路設定值"},
+
+    {"authority":"ROLE_ADMIN_AGENT_CREATE","desc":"建立代理商"},
+    {"authority":"ROLE_ADMIN_AGENT_EDIT","desc":"修改代理商"},
+    {"authority":"ROLE_ADMIN_AGENT_DELETE","desc":"刪除/停用 代理商"},
+    {"authority":"ROLE_ADMIN_AGENT_VIEW","desc":"檢視代理商"},
+    {"authority":"ROLE_ADMIN_AGENT_CONFIG","desc":"修改代理商設定值"},
+
+    {"authority":"ROLE_ADMIN_EXPERT_CREATE","desc":"建立達人"},
+    {"authority":"ROLE_ADMIN_EXPERT_EDIT","desc":"修改達人"},
+    {"authority":"ROLE_ADMIN_EXPERT_DISABLE","desc":"刪除/停用 達人"},
+    {"authority":"ROLE_ADMIN_EXPERT_VIEW","desc":"檢視達人"},
+    {"authority":"ROLE_ADMIN_EXPERT_CONFIG","desc":"修改達人設定值"},
+
+    {"authority":"ROLE_ADMIN_TRAVELNOTE","desc":"遊記管理"},
+
+    {"authority":"ROLE_ADMIN_CUSTOMER_SERVICE","desc":"系統客服"},
+    {"authority":"ROLE_ADMIN_AUTHORITY_MANAGEMENT","desc":"權限管理"},
+    {"authority":"ROLE_ADMIN_TRAVELNOTE_CATEGORY","desc":"遊記分類管理"},
+    {"authority":"ROLE_ADMIN_POI_CATEGORY","desc":"Poi分類管理"},
+    {"authority":"ROLE_ADMIN_TAG_MANAGEMENT","desc":"標籤管理"},
+    {"authority":"ROLE_ADMIN_COUNTRY_MANAGEMENT","desc":"國家/地區管理"},
+
+    {"authority":"ROLE_ADMIN_ANNOUNCEMENT_MANAGEMENT","desc":"公告管理"},
+
+    {"authority":"ROLE_ADMIN_FINANCIAL_MANAGEMENT","desc":"財務管理"}
+
+  ],
+
+  "storeRoleList":[
+    {"authority":"ROLE_STORE_AGENT_MANAGEMENT","desc":"代理商管理"},
+    {"authority":"ROLE_STORE_CONFIG","desc":"設定參數"},
+    {"authority":"ROLE_STORE_EDIT","desc":"修改店家資料"},
+    {"authority":"ROLE_STORE_ACCOUNT_MANAGER","desc":"帳號管理"},
+    {"authority":"ROLE_STORE_CHANGE_OWNER","desc":"變更管理者"},
+
+    {"authority":"ROLE_STORE_COUPON_MANAGEMENT","desc":"優惠券管理"},
+    {"authority":"ROLE_STORE_COUPON_CONTRACT_MANAGEMENT","desc":"優惠券合約管理"},
+
+    {"authority":"ROLE_STORE_PRODUCT_CREATE","desc":"建立商品"},
+    {"authority":"ROLE_STORE_PRODUCT_EDIT","desc":"修改商品"},
+    {"authority":"ROLE_STORE_PRODUCT_CHANGE_STATUS","desc":"商品上下架"},
+    {"authority":"ROLE_STORE_PRODUCT_DELETE","desc":"刪除商品"},
+    {"authority":"ROLE_STORE_PRODUCT_VIEW","desc":"檢視商品"},
+    {"authority":"ROLE_STORE_PRODUCT_INVENTORY","desc":"商品庫存"},
+    {"authority":"ROLE_STORE_CUSTOMER_MANAGEMENT","desc":"客戶管理"},
+    {"authority":"ROLE_STORE_CUSTOMER_CONTRACT_MANAGEMENT","desc":"客戶合約管理"},
+    {"authority":"ROLE_STORE_CUSTOMER_PAYMENT_MANAGEMENT","desc":"客戶付款管理"},
+
+
+    {"authority":"ROLE_STORE_BRANCH_MANAGEMENT","desc":"分店管理"},
+
+    {"authority":"ROLE_STORE_BOOKING_SESSION","desc":"預約時段設定"},
+    {"authority":"ROLE_STORE_BOOKING_REFUND","desc":"預約退款設定"},
+    {"authority":"ROLE_STORE_BOOKING_SPEC","desc":"預約規格設定"},
+    {"authority":"ROLE_STORE_RESERVATION","desc":"預約服務項目管理"},
+    {"authority":"ROLE_STORE_BOOKING_SETTING","desc":"預約服務行事曆管理"},
+
+    {"authority":"ROLE_STORE_CUSTOMER_SERVICE","desc":"客服服務"},
+    {"authority":"ROLE_STORE_SHIPPING_MANAGEMENT","desc":"運送服務"},
+    {"authority":"ROLE_STORE_FINANCIAL_MANAGEMENT","desc":"財務管理"},
+
+    {"authority":"ROLE_STORE_WEB_REDEEM","desc":"Web核銷"},
+    {"authority":"ROLE_STORE_APP_REDEEM","desc":"APP核銷"},
+    {"authority":"ROLE_STORE_APP_REPORT","desc":"APP報表"},
+
+    {"authority":"ROLE_STORE_ANNOUNCEMENT_MANAGEMENT","desc":"公告管理"}
+
+  ],
+
+  "branchRoleList":[
+    {"authority":"ROLE_AGENT_BRANCH_APP","desc":"APP使用"},
+    {"authority":"ROLE_AGENT_BRANCH_SALES","desc":"銷售商品"},
+    {"authority":"ROLE_AGENT_BRANCH_FINANCIAL","desc":"銷售報表"},
+    {"authority":"ROLE_STORE_BRANCH_APP","desc":"APP使用"},
+    {"authority":"ROLE_STORE_BRANCH_REDEEM","desc":"核銷商品"},
+    {"authority":"ROLE_STORE_BRANCH_FINANCIAL","desc":"核銷報表"}
+  ],
+
+  "agentRoleList":[
+
+    {"authority":"ROLE_AGENT_CONFIG","desc":"設定參數"},
+    {"authority":"ROLE_AGENT_EDIT","desc":"修改代理商資料"},
+    {"authority":"ROLE_AGENT_ACCOUNT_MANAGEMENT","desc":"代理商帳號管理"},
+    {"authority":"ROLE_AGENT_CHANGE_OWNER","desc":"變更代理商管理者"},
+    {"authority":"ROLE_AGENT_PAYMENT_SETTING_COFIG","desc":"金流設定"},
+
+    {"authority":"ROLE_AGENT_PRODUCT_EDIT","desc":"產品設計(修改描述檔)"},
+
+    {"authority":"ROLE_AGENT_SUPPLIER_MANAGEMENT","desc":"供應商管理"},
+    {"authority":"ROLE_AGENT_SUPPLIER_CONTRACT_MANAGEMENT","desc":"供應商合約管理"},
+
+    {"authority":"ROLE_AGENT_SUPPLIER_PAYMENT_MANAGEMENT","desc":"供應商付款管理"},
+
+    {"authority":"ROLE_AGENT_CUSTOMER_SERVICE","desc":"客服服務"},
+    {"authority":"ROLE_AGENT_PAYMENT_MANAGEMENT","desc":"訂單管理"},
+
+    {"authority":"ROLE_AGENT_DEALER_PARTNER_MANAGEMENT","desc":"經銷夥伴管理"},
+    {"authority":"ROLE_AGENT_DEALER_BUYER_CONTRACT_MANAGEMENT","desc":"經銷買方合約管理(目前無作用)"},
+    {"authority":"ROLE_AGENT_DEALER_BUYER_PAYMENT_MANAGEMENT","desc":"經銷買方付款管理(目前無作用)"},
+    {"authority":"ROLE_AGENT_DEALER_SELLER_CONTRACT_MANAGEMENT","desc":"經銷賣方合約管理"},
+    {"authority":"ROLE_AGENT_DEALER_SELLER_PAYMENT_MANAGEMENT","desc":"經銷賣方付款管理(目前無作用)"},
+
+    {"authority":"ROLE_AGENT_PRODUCT_INVENTORY","desc":"庫存管理"},
+    {"authority":"ROLE_AGENT_APP_USER","desc":"APP操作人員"},
+
+    {"authority":"ROLE_AGENT_CHANNEL_MANAGEMENT","desc":"通路管理"},
+
+    {"authority":"ROLE_AGENT_PACKAGE_TOUR_MANAGEMENT","desc":"套票管理"},
+
+    {"authority":"ROLE_AGENT_SALE_TOUR_MANAGEMENT","desc":"套票銷售管理"},
+
+    {"authority":"ROLE_AGENT_TOUR_PRODUCT_MANAGEMENT","desc":"套票商品管理"},
+    {"authority":"ROLE_AGENT_BONUS_PRODUCT_MANAGEMENT","desc":"紅利商品管理"},
+    {"authority":"ROLE_AGENT_ADDON_PRODUCT_MANAGEMENT","desc":"加購商品管理"},
+    {"authority":"ROLE_AGENT_GROUP_PRODUCT_MANAGEMENT","desc":"自組商品管理"},
+
+    {"authority":"ROLE_AGENT_BRANCH_MANAGEMENT","desc":"分店管理"},
+
+    {"authority":"ROLE_AGENT_BANNER_MANAGEMENT","desc":"行銷活動管理"},
+
+    {"authority":"ROLE_AGENT_ANNOUNCEMENT_MANAGEMENT","desc":"公告管理"},
+    {"authority":"ROLE_AGENT_CATEGORY_MANAGEMENT","desc":"分類管理"},
+
+    {"authority":"ROLE_AGENT_COUPON_CONTRACT_MANAGEMENT","desc":"優惠券合約管理"},
+    {"authority":"ROLE_AGENT_COUPON_PACKAGE_MANAGEMENT","desc":"優惠券套組管理"}
+
+
+  ],
+
+  "channelRoleList":[
+    {"authority":"ROLE_CHANNEL_CATEGORY_MANAGEMENT","desc":"分類管理"},
+    {"authority":"ROLE_CHANNEL_TAG_MANAGEMENT","desc":"標籤管理"},
+    {"authority":"ROLE_CHANNEL_NEWS_CATEGORY_MANAGEMENT","desc":"最新消息分類管理"},
+    {"authority":"ROLE_CHANNEL_NEWS_MANAGEMENT","desc":"最新消息管理"},
+    {"authority":"ROLE_CHANNEL_BANNERPANEL_MANAGEMENT","desc":"行銷區塊管理"},
+    {"authority":"ROLE_CHANNEL_BANNER_MANAGEMENT","desc":"行銷活動管理"},
+    {"authority":"ROLE_CHANNEL_ANNOUNCEMENT_MANAGEMENT","desc":"公告管理"},
+    {"authority":"ROLE_CHANNEL_SALE_TOUR_MANAGEMENT","desc":"套票銷售管理"},
+    {"authority":"ROLE_CHANNEL_REGION_MANAGEMENT","desc":"區域管理"},
+    {"authority":"ROLE_CHANNEL_FINANCIAL_MANAGEMENT","desc":"財務管理"},
+    {"authority":"ROLE_CHANNEL_EMAIL_CONFIG","desc":"郵件參數管理"},
+    {"authority":"ROLE_CHANNEL_MESSAGE_TEMPLATE_MANAGEMENT","desc":"訊息內容格式管理"},
+    {"authority":"ROLE_CHANNEL_CONFIG","desc":"設定參數"}
+  ]
+}
