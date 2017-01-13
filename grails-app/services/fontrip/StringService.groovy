@@ -41,4 +41,12 @@ class StringService {
         }
         return randomWord.toString();
     }
+
+    public static String getFileExtension(String path){
+
+        def fileNameExtension = "unknown"
+        if(path.lastIndexOf('.')>0) fileNameExtension =  path.substring(path.lastIndexOf('.') + 1).toLowerCase()
+
+        return fileNameExtension
+    }
 }

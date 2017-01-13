@@ -55,9 +55,13 @@ class User implements Serializable {
 		this.password = password
 	}
 
-	Set<Role> getAuthorities() {
-		UserRole.findAllByUser(this)*.role
-	}
+//	Set<Role> getAuthorities() {
+//		UserRole.findAllByUser(this)*.role
+//	}
+
+    Set<RoleGroup> getRoleGroup() {
+        return UserRoleGroup.findAllByUser(this)*.roleGroup
+    }
 
 	def beforeInsert() {
 		encodePassword()

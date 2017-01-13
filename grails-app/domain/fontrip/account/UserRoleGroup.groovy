@@ -82,18 +82,18 @@ class UserRoleGroup implements Serializable {
 		if (flush) { UserRoleGroup.withSession { it.flush() } }
 	}
 
-	static constraints = {
-		roleGroup validator: { RoleGroup r, UserRoleGroup ur ->
-			if (ur.user == null || ur.user.id == null) return
-			boolean existing = false
-			UserRoleGroup.withNewSession {
-				existing = UserRoleGroup.exists(ur.user.id, r.id)
-			}
-			if (existing) {
-				return 'userRole.exists'
-			}
-		}
-	}
+    static constraints = {
+        user validator: { User u, UserRoleGroup ug ->
+            if (ug.roleGroup == null || ug.roleGroup.id == null) return
+            boolean existing = false
+            UserRoleGroup.withNewSession {
+                existing = UserRoleGroup.exists(u.id, ug.roleGroup.id)
+            }
+            if (existing) {
+                return 'userGroup.exists'
+            }
+        }
+    }
 
 	static mapping = {
 		id composite: ['user', 'roleGroup']
