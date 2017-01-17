@@ -62,6 +62,8 @@ public static  java.lang.Object getTransients() { return null;}
 public static  void setTransients(java.lang.Object value) { }
 public static  java.lang.Object getConstraints() { return null;}
 public static  void setConstraints(java.lang.Object value) { }
+public  java.lang.Object getAfterInsert() { return null;}
+public  void setAfterInsert(java.lang.Object value) { }
 public  java.lang.String getHashid() { return (java.lang.String)null;}
 public  java.lang.String getCloudPath() { return (java.lang.String)null;}
 public  boolean checkFile() { return false;}

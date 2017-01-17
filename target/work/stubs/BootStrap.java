@@ -14,8 +14,13 @@ public  void setMetaClass(groovy.lang.MetaClass mc) { }
 public  java.lang.Object invokeMethod(java.lang.String method, java.lang.Object arguments) { return null;}
 public  java.lang.Object getProperty(java.lang.String property) { return null;}
 public  void setProperty(java.lang.String property, java.lang.Object value) { }
+public  java.lang.Object getSystemService() { return null;}
+public  void setSystemService(java.lang.Object value) { }
+public  java.lang.Object getFileService() { return null;}
+public  void setFileService(java.lang.Object value) { }
 public  java.lang.Object getInit() { return null;}
 public  void setInit(java.lang.Object value) { }
 public  java.lang.Object getDestroy() { return null;}
 public  void setDestroy(java.lang.Object value) { }
+public  java.lang.Object createInitUser() { return null;}
 }

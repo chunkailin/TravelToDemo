@@ -17,4 +17,5 @@ public  java.lang.Object invokeMethod(java.lang.String method, java.lang.Object 
 public  java.lang.Object getProperty(java.lang.String property) { return null;}
 public  void setProperty(java.lang.String property, java.lang.Object value) { }
 public static  boolean checkUrlExist(java.lang.String url) { return false;}
+public  boolean ftpDisconnect(org.apache.commons.net.ftp.FTPClient ftpClient) { return false;}
 }

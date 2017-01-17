@@ -11,6 +11,7 @@ import groovy.util.*;
   extends java.lang.Object  implements
     groovy.lang.GroovyObject {
 ;
+public static  java.lang.String generateRandomWord(int digit) { return (java.lang.String)null;}
 public  groovy.lang.MetaClass getMetaClass() { return (groovy.lang.MetaClass)null;}
 public  void setMetaClass(groovy.lang.MetaClass mc) { }
 public  java.lang.Object invokeMethod(java.lang.String method, java.lang.Object arguments) { return null;}
@@ -20,4 +21,6 @@ public  java.lang.Object getGrailsApplication() { return null;}
 public  void setGrailsApplication(java.lang.Object value) { }
 public static  java.lang.String encodeHashid(java.lang.Object clazz, java.lang.Object id) { return (java.lang.String)null;}
 public static  long decodeHashid(java.lang.Object clazz, java.lang.Object hashid) { return (long)0;}
+public static  java.lang.String generateRandomWord(int digit, boolean numberOnly) { return (java.lang.String)null;}
+public static  java.lang.String getFileExtension(java.lang.String path) { return (java.lang.String)null;}
 }

@@ -1,1 +1,6 @@
-
+TravelToDemo.iml
+TravelToDemo-grailsPlugins.iml
+app.log
+.asscache
+.idea/
+target/

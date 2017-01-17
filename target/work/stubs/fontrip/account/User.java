@@ -11,6 +11,8 @@ import groovy.util.*;
   extends java.lang.Object  implements
     java.io.Serializable,    groovy.lang.GroovyObject {
 ;
+public User
+(java.lang.String username, java.lang.String password) {}
 public  groovy.lang.MetaClass getMetaClass() { return (groovy.lang.MetaClass)null;}
 public  void setMetaClass(groovy.lang.MetaClass mc) { }
 public  java.lang.Object invokeMethod(java.lang.String method, java.lang.Object arguments) { return null;}
@@ -84,6 +86,8 @@ public  void setNationality(java.lang.String value) { }
 public  boolean getInfoCompleted() { return false;}
 public  boolean isInfoCompleted() { return false;}
 public  void setInfoCompleted(boolean value) { }
+public  fontrip.SysFile getAvatar() { return (fontrip.SysFile)null;}
+public  void setAvatar(fontrip.SysFile value) { }
 public  java.lang.String getLegacyId() { return (java.lang.String)null;}
 public  void setLegacyId(java.lang.String value) { }
 public static  java.lang.Object getTransients() { return null;}
@@ -92,6 +96,7 @@ public static  java.lang.Object getConstraints() { return null;}
 public static  void setConstraints(java.lang.Object value) { }
 public static  java.lang.Object getMapping() { return null;}
 public static  void setMapping(java.lang.Object value) { }
+public  java.util.Set<fontrip.account.RoleGroup> getRoleGroup() { return (java.util.Set<fontrip.account.RoleGroup>)null;}
 public  java.lang.Object beforeInsert() { return null;}
 public  java.lang.Object beforeUpdate() { return null;}
 protected  void encodePassword() { }

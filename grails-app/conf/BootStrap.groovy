@@ -16,12 +16,12 @@ class BootStrap {
         //建立預設系統參數
         systemService.createSysConfig();
         //載入國家資料與台灣地區
-        if(fontrip.location.Country.count()==0){
-            systemService.loadCountry();
-            systemService.loadTaiwanCity();
-        }
+//        if(fontrip.location.Country.count()==0){
+//            systemService.loadCountry();
+//            systemService.loadTaiwanCity();
+//        }
         //處理自訂的Location
-        systemService.processLocations()
+//        systemService.processLocations()
 
         //建立預設使用者
         createInitUser();
@@ -32,7 +32,7 @@ class BootStrap {
         systemService.setFontripDefaultPhoto();
 
         //建立寶島通專用的通路
-        systemService.createDefaultChannel();
+//        systemService.createDefaultChannel();
 
 
 
