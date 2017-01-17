@@ -32,7 +32,7 @@ class BootStrap {
         systemService.setFontripDefaultPhoto();
 
         //建立寶島通專用的通路
-//        systemService.createDefaultChannel();
+        systemService.createDefaultChannel();
 
 
 
@@ -41,7 +41,7 @@ class BootStrap {
     def createInitUser(){
 
         //create admin user
-        def userList = ["admin@fontrip.com","admin-api@fontrip.com","admin-config@fontrip.com"]
+        def userList = ["admin@fontrip.com","admin-api@fontrip.com","admin-config@fontrip.com","doublekai0904@gmail.com"]
         for(username in userList){
             //1. 建立帳號
             def userInstance = User.findByUsername(username) ?: new User(
@@ -57,7 +57,7 @@ class BootStrap {
                 UserRoleGroup.create(userInstance, RoleGroup.findByName("GROUP_USER"),true)
             }
 
-            if(username=="admin@fontrip.com"){
+            if(username=="admin@fontrip.com" || username=="doublekai0904@gmail.com"){
                 UserRoleGroup.create(userInstance, AdminRoleGroup.findByName("GROUP_ADMIN_ACCOUNT_MANAGER"),true)
                 UserRoleGroup.create(userInstance, AdminRoleGroup.findByName("GROUP_ADMIN_FINANCIAL_MANAGER"),true)
             }

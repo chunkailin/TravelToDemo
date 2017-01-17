@@ -364,10 +364,10 @@ grails {
 //		password = "A29FJtcFXpvs"
 //		props = ["mail.smtp.auth":"true", "mail.smtp.starttls.enable": "false"]
 
-        username="fontrip"
-        password="itri02750963"
+        username="itri"
+        password="02750963c200"
         host="smtp.sendgrid.net"
-        port=587
+        port=25
         props = ["mail.smtp.auth":"true", "mail.smtp.starttls.enable": "false"]
 
 

@@ -28,6 +28,7 @@ class SystemService {
     def grailsApplication
     def ToolService
     def fileService
+    def fontripService
 
     def loadCountry(){
         println("======Load Country Start======")
@@ -928,7 +929,7 @@ class SystemService {
     def createDefaultChannel(){
         String fontripChannelId = "com.fontrip.taiwan"
         if(!Channel.findByLegacyId(fontripChannelId)){
-            def owner = User.findByUsername("admin@fontrip.com")
+            def owner = User.findByUsername("doublekai0904@gmail.com")
             Channel channelInstance = new Channel(owner: null,legacyId:fontripChannelId,status:Channel.STATUS_ENABLE).save(flush:true);
             new ChannelDetail(
                     name:"Fontrip Service",
@@ -940,6 +941,9 @@ class SystemService {
                     poi:channelInstance,
                     lang:'zh_TW'
             ).save(flush:true);
+
+            fontripService.setupChannel(channelInstance)
+            fontripService.changePoiOwner(channelInstance,owner)
         }
     }
 }

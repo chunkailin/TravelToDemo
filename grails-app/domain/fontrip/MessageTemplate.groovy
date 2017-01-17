@@ -82,4 +82,24 @@ class MessageTemplate {
         }
         return result
     }
+
+
+    // Parameter Keys
+    final static String Parameter_Key_Date   = "[[date]]"
+    final static String Parameter_Key_ChannelName   = "[[channelName]]"
+
+    final static String Parameter_Key_UserFirstName         = "[[userFirstName]]"
+    final static String Parameter_Key_UserLastName          = "[[userLastName]]"
+    final static String Parameter_Key_UserValidateLink      = "[[userValidateLink]]"
+    final static String Parameter_Key_UserResetPasswordLink = "[[userResetPasswordLink]]"
+
+    final static String Parameter_Key_PaymentOrderNo        = "[[paymentOrderNo]]"
+    final static String Parameter_Key_PaymentDate           = "[[paymentDate]]"
+    final static String Parameter_Key_PaymentStatus         = "[[paymentStatus]]"
+    final static String Parameter_Key_PaymentSettingName    = "[[paymentSettingName]]"
+    final static String Parameter_Key_PaymentPaidDate       = "[[paymentPaidDate]]"
+    final static String Parameter_Key_PaymentDueDate        = "[[paymentDueDate]]"
+    final static String Parameter_Key_PaymentDetail         = "[[paymentDetail]]"
+    final static String Parameter_Key_PaymentBookingOrder   = "[[paymentBookingOrder]]"
+    final static String Parameter_Key_PaymentRefundDetail  = "[[paymentRefundDetail]]"
 }
