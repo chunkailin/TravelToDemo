@@ -378,28 +378,6 @@ grails {
 
 
 // Added by the Spring Security Core plugin:
-grails.plugin.springsecurity.successHandler.defaultTargetUrl = "/login/authSuccess"
-grails.plugin.springsecurity.userLookup.userDomainClassName = 'fontrip.account.User'
-grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'fontrip.account.UserRole'
-grails.plugin.springsecurity.authority.className = 'fontrip.account.Role'
-grails.plugin.springsecurity.authority.groupAuthorityNameField = 'authorities'
-grails.plugin.springsecurity.useRoleGroups = true
-grails.plugin.springsecurity.controllerAnnotations.staticRules = [
-	'/':                ['permitAll'],
-	'/index':           ['permitAll'],
-	'/index.gsp':       ['permitAll'],
-	'/assets/**':       ['permitAll'],
-	'/**/js/**':        ['permitAll'],
-	'/**/css/**':       ['permitAll'],
-	'/**/images/**':    ['permitAll'],
-	'/**/favicon.ico':  ['permitAll'],
-    '/test/**':        ['permitAll']
-
-]
-
-
-
-// Added by the Spring Security Core plugin:
 //grails.plugin.springsecurity.successHandler.defaultTargetUrl = "/login/authSuccess"
 grails.plugin.springsecurity.userLookup.userDomainClassName = 'fontrip.account.User'
 grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'fontrip.account.UserRole'
