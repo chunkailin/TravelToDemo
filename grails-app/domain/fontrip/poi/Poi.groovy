@@ -78,13 +78,11 @@ abstract class Poi implements Serializable {
         return tempDetail
     }
     public void loadDetail(){
-        println "---loadDetail...."
         def detailList = PoiDetail.findAllByPoi(this)
         details = new HashMap()
         for(detail in  detailList){
             details.put(detail.lang,detail)
         }
-        println "---loadDetail Done...."
     }
 
     static mapping = {

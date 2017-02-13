@@ -4,10 +4,11 @@ import fontrip.account.RoleGroup
 import fontrip.account.User
 import fontrip.account.UserRole
 import fontrip.account.UserRoleGroup
+import fontrip.poi.Channel
 
 class BootStrap {
     def systemService
-    def fileService
+    def fileService, fontripService
     def init = { servletContext ->
         //建立系統預設角色
         systemService.createDefaultRoleData()
@@ -32,11 +33,14 @@ class BootStrap {
         systemService.setFontripDefaultPhoto();
 
         //建立寶島通專用的通路
+        println "------0--------"
         systemService.createDefaultChannel();
-
-
-
-
+        println "------1--------"
+        //20160912 by become
+        for(channel in Channel.list()){
+            fontripService.setupChannel(channel)
+        }
+        println "------2--------"
     }
     def createInitUser(){
 
@@ -47,7 +51,7 @@ class BootStrap {
             def userInstance = User.findByUsername(username) ?: new User(
                     username: username,
                     password: '02750963',
-                    email: 'fontrip.tw+travelto@gmail.com',
+                    email: 'doublekai0904@gmail.com',
                     name:username,backendUser:true,emailValidate:true,
                     nationality: 'TW',
                     enabled: true,infoCompleted: true).save(flush: true, failOnError: true)
